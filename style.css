@@ -1,0 +1,158 @@
+body {
+  font-family: sans-serif;
+  background-color: #1b1b1b;
+}
+
+.grid-layout {
+  width: 70vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(35px, 1fr))[20];
+      grid-template-columns: repeat(20, minmax(35px, 1fr));
+  grid-gap: 10px;
+  grid-auto-rows: minmax(35px, auto);
+  grid-auto-flow: dense;
+  padding: 10px;
+}
+
+.grid-item {
+  padding: 1rem;
+  font-size: 15;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #929796;
+  background-color: #817b7b;
+  border-radius: 5px;
+}
+
+.span-4-6 {
+  -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+  -ms-grid-row-span: 6;
+      grid-row-end: span 6;
+  background-color: #333;
+}
+
+.span-2-4 {
+  -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+  -ms-grid-row-span: 4;
+      grid-row-end: span 4;
+  background-color: #333;
+}
+
+.span-13-1 {
+  -ms-grid-column-span: 13;
+      grid-column-end: span 13;
+  -ms-grid-row-span: 1;
+      grid-row-end: span 1;
+  background-color: #333;
+}
+
+.span-2-2 {
+  -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+  -ms-grid-row-span: 2;
+      grid-row-end: span 2;
+  background-color: #333;
+}
+
+.span-2-4 {
+  -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+  -ms-grid-row-span: 2;
+      grid-row-end: span 2;
+  background-color: #333;
+}
+
+.span-6-2 {
+  -ms-grid-column-span: 6;
+      grid-column-end: span 6;
+  -ms-grid-row-span: 2;
+      grid-row-end: span 2;
+  background-color: #333;
+}
+
+.span-1-10 {
+  -ms-grid-column-span: 1;
+      grid-column-end: span 1;
+  -ms-grid-row-span: 10;
+      grid-row-end: span 10;
+  background-color: #333;
+}
+
+.span-2-10 {
+  -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+  -ms-grid-row-span: 10;
+      grid-row-end: span 10;
+  background-color: #333;
+}
+
+.span-20-2 {
+  -ms-grid-column-span: 20;
+      grid-column-end: span 20;
+  -ms-grid-row-span: 2;
+      grid-row-end: span 2;
+  background-color: #333;
+}
+
+.span-20-1 {
+  -ms-grid-column-span: 20;
+      grid-column-end: span 20;
+  -ms-grid-row-span: 1;
+      grid-row-end: span 1;
+  background-color: #333;
+}
+
+.span-1-2 {
+  -ms-grid-column-span: 1;
+      grid-column-end: span 1;
+  -ms-grid-row-span: 2;
+      grid-row-end: span 2;
+  background-color: #333;
+}
+
+.span-4-1 {
+  -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+  -ms-grid-row-span: 1;
+      grid-row-end: span 1;
+  background-color: #333;
+}
+
+.spot-vert-o {
+  -ms-grid-column-span: 1;
+      grid-column-end: span 1;
+  -ms-grid-row-span: 2;
+      grid-row-end: span 2;
+  background-color: #333;
+  background-color: #817b7b;
+}
+
+.spot-horz-o {
+  -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+  -ms-grid-row-span: 1;
+      grid-row-end: span 1;
+  background-color: #333;
+  background-color: #817b7b;
+}
+
+.spot-vert-x {
+  -ms-grid-column-span: 1;
+      grid-column-end: span 1;
+  -ms-grid-row-span: 2;
+      grid-row-end: span 2;
+  background-color: #333;
+}
+
+.spot-horz-x {
+  -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+  -ms-grid-row-span: 1;
+      grid-row-end: span 1;
+  background-color: #333;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,91 @@
+// ff nightly or chrome with flags enabled
+// https://www.youtube.com/watch?v=Dz9BzY21Zks&list=PLQkVA6z3dFvbnBJetfYDAF3-cG_ubgdZR 
+// http://gridbyexample.com/
+// Rachel Andrew F.T.W
+
+body {
+    font-family: sans-serif;
+    background-color: #1b1b1b;
+}
+
+.grid-layout {
+    width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(20, minmax(35px, 1fr));
+    grid-gap: 10px;
+    grid-auto-rows: minmax(35px, auto);
+    grid-auto-flow: dense;
+    padding: 10px;
+}
+
+.grid-item {
+    padding: 1rem;
+    font-size: 15;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #929796;
+    background-color: #817b7b;
+    border-radius: 5px;
+}
+
+@mixin span($spanx, $spany) {
+    grid-column-end: span $spanx;
+    grid-row-end: span $spany;
+    background-color: #333;
+}
+
+.span-4-6 {
+    @include span(4,6);
+}
+.span-2-4 {
+    @include span(2,4);
+}
+.span-13-1 {
+    @include span(13,1);
+}
+.span-2-2 {
+    @include span(2,2);
+}
+.span-2-4 {
+    @include span(4,2);
+}
+.span-6-2 {
+    @include span(6,2);
+}
+.span-1-10 {
+    @include span(1,10);
+}
+.span-2-10 {
+    @include span(2,10);
+}
+.span-20-2 {
+    @include span(20,2);
+}
+.span-20-1 {
+    @include span(20,1);
+}
+.span-1-2 {
+    @include span(1,2);
+}
+.span-4-1 {
+    @include span(4,1);
+}
+
+
+.spot-vert-o{
+    @include span(1,2);
+    background-color: #817b7b;
+}
+.spot-horz-o{
+    @include span(2,1);
+    background-color: #817b7b;
+}
+.spot-vert-x{
+    @include span(1,2);
+}
+.spot-horz-x{
+    @include span(2,1);
+}
+
+
